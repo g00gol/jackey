@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      "white": "#F5F5F7",
+      "white": "#ffffff",
       "dark-bluegray": "#2E3035"
     },
     extend: {},

@@ -8,9 +8,18 @@ module.exports = {
     colors: {
       transparent: "transparent",
       "white": "#ffffff",
-      "dark-bluegray": "#2E3035"
+      "dark-bluegray": "#2E3035",
+      "violet": "#E81CFF",
+      "skyblue": "#40C9FF",
+      "gray": {
+        dark: "#606060"
+      }
     },
-    extend: {},
+    extend: {
+      margin: {
+        "10vw": "10vw"
+      },
+    },
   },
   plugins: [],
 }

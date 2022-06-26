@@ -5,13 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        transparent: "transparent",
-        "white": "#ffffff",
-        "dark-bluegray": "#2E3035"
-      },
+    colors: {
+      transparent: "transparent",
+      "white": "#ffffff",
+      "dark-bluegray": "#2E3035"
     },
+    extend: {},
   },
   plugins: [],
 }

@@ -16,8 +16,12 @@ module.exports = {
       }
     },
     extend: {
+      fontSize: {
+        "4.5vw": "4.5vw",
+        "5vw": "5vw",
+      },
       margin: {
-        "10vw": "10vw"
+        "10vw": "10vw",
       },
     },
   },

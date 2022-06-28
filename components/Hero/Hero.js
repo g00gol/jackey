@@ -14,40 +14,24 @@ export default function Hero() {
 				I currently study Computer Science <br />
 				at Stevens Institute of Technology.
 			</div>
-			<div className="absolute -z-50 left-0 top-0">
-				<HeroImage />
+			<div className="absolute -z-50 left-0 -top-32">
+				<HeroImage url={`/images/hero.png`} />
 				<div className="absolute bottom-0">
-					<HeroImage2 />
+					<HeroImage url={`/images/mountains.png`} />
 				</div>
 			</div>
 		</div>
 	)
 }
 
-const HeroImage = () => {
+const HeroImage = (props) => {
 	const [aspectRatio, setAspectRatio] = useState(16 / 9)
 	const size = useWindowDimensions()
 
 	return (
 		<Image
 			className="block"
-			src={"/images/hero.png"}
-			width={size.width ? size.width : 0}
-			height={size.width ? size.width / aspectRatio : 0}
-			layout="fixed"
-			onLoadingComplete={({ naturalWidth, naturalHeight }) =>
-				setAspectRatio(naturalWidth / naturalHeight)
-			}
-		/>
-	)
-}
-const HeroImage2 = () => {
-	const [aspectRatio, setAspectRatio] = useState(16 / 9)
-	const size = useWindowDimensions()
-
-	return (
-		<Image
-			src={"/images/mountains.png"}
+			src={props.url}
 			width={size.width ? size.width : 0}
 			height={size.width ? size.width / aspectRatio : 0}
 			layout="fixed"

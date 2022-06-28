@@ -1,4 +1,5 @@
 Site is built using Next.js and TailwindCSS and deployed at https://jackey.vercel.app!
+(WIP)
 
 # Software Developer Portfolio 💻
 My everyday fun collapsed into a website designed for your viewing experience!
